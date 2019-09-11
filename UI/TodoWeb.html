@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="firstpage.css">
+    <title>My Website</title>
+  </head>
+  <body>
+    <div class="header" >
+      <h1>My Website</h1>
+    </div>
+
+    <div class="row">
+        <div class="left">
+            <h4>
+              <ul>
+                <li onclick="myFunction('todo')"><a>Todo</a></li>
+                <li onclick="myFunction('user')"><a>User</a></li>
+                <li onclick="myFunction('develop')"><a>Develop</a></li>
+                <li onclick="myFunction('logout')"><a>Logout</a></li>
+              </ul>
+            </h4>
+        </div>
+        <div class="right" id="todo">
+          <h2>LIST</h2>
+          <input type="text" id="myInput" onkeyup="AutoPopulate()" onfocus="show()" onblur="hideShow()" placeholder="Search for names.." title="Type in a name">
+          <button class="button" onclick="SearchItem()" >Search</button>
+          <button class="button"  onclick="AddItem()">Add</button>
+          <ul id="myUL">
+          </ul>
+          <center>
+          <table id="myTable"></table>
+          </center>
+        </div>
+        <div class="right" id="user">
+          <h2>USER'S LIST</h2>
+        </div>
+        <div class="right" id="develop">
+          <h2>DEVELOPER'S LIST</h2>
+        </div>
+        <div class="right" id="logout">
+          <h2>YOU LOGGED OUT</h2>
+        </div>
+
+      </div>
+      <script type="text/javascript" src="ToDo.js">
+
+      
+      </script>
+
+    </body>
+</html>
